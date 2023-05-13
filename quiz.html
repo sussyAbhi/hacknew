@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Perception Test</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .color-box {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Color Perception Test</h1>
+        <p>Are these two colors the same?</p>
+        <div id="color-pair" class="mb-4">
+            <div class="color-box"></div>
+            <div class="color-box"></div>
+        </div>
+        <button onclick="submitAnswer(true)" class="btn btn-primary mr-2">Yes</button>
+        <button onclick="submitAnswer(false)" class="btn btn-secondary">No</button>
+        <div id="result" class="mt-4"></div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
