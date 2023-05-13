@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Color Blindness Adjuster",
+  "version": "1.0",
+  "description": "An extension to adjust webpage colors based on the user's type of color blindness.",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
