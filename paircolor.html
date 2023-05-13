@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Color Blindness Quiz</title>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+  </head>
+  <body>
+    <h1>Color Blindness Quiz</h1>
+    <form id="quizForm">
+      <!-- Deuteranopia -->
+      <h2>Deuteranopia Test</h2>
+      <p>Can you differentiate between these colors?</p>
+      <div style="background-color:#5F9EA0;">&#8203;</div> <!-- CadetBlue -->
+      <div style="background-color:#7FFF00;">&#8203;</div> <!-- Chartreuse -->
+      <input type="radio" id="deuteranopiaYes" name="deuteranopia" value="yes">
+      <label for="deuteranopiaYes">Yes</label>
+      <input type="radio" id="deuteranopiaNo" name="deuteranopia" value="no">
+      <label for="deuteranopiaNo">No</label>
+
+      <!-- Add similar blocks for the other types of color blindness -->
+      
+      <button type="submit" id="submitQuiz">Submit</button>
+    </form>
+  </body>
+</html>
